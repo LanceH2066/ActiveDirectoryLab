@@ -6,27 +6,7 @@ A virtualized home lab simulating an enterprise Active Directory environment wit
 
 ## 🗺️ Network Diagram
 
-```
-+-------------------+       +----------------------+
-|   Kali Linux      |       |   Windows 10         |
-|   (Attacker)      |       |   (Target Machine)   |
-|   192.168.10.250  |       |   IP: DHCP           |
-|                   |       |   Splunk UF + Sysmon  |
-|                   |       |   Atomic Red Team     |
-+--------+----------+       +-----------+----------+
-         |                              |
-         |        192.168.10.0/24       |
-         +----------+-------------------+
-                    |
-         +----------+----------+
-         |                     |
-+--------+----------+ +--------+----------+
-|  Active Directory | |   Splunk Server   |
-|  Domain: Test   | |   192.168.10.10   |
-|  192.168.10.7     | |                   |
-|                   | |                   |
-+-------------------+ +-------------------+
-```
+![Active Directory Home Lab Diagram](AD_PROJECT_DIAGRAM.PNG)
 
 ### Network Summary
 
