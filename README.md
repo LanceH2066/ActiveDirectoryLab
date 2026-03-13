@@ -22,7 +22,7 @@ A virtualized home lab simulating an enterprise Active Directory environment wit
          |                     |
 +--------+----------+ +--------+----------+
 |  Active Directory | |   Splunk Server   |
-|  Domain: MyDFIR   | |   192.168.10.10   |
+|  Domain: Test   | |   192.168.10.10   |
 |  192.168.10.7     | |                   |
 |                   | |                   |
 +-------------------+ +-------------------+
@@ -37,7 +37,7 @@ A virtualized home lab simulating an enterprise Active Directory environment wit
 | Windows 10 | Domain-joined target machine | DHCP |
 | Kali Linux | Attacker machine | 192.168.10.250 |
 
-**Domain:** MyDFIR  
+**Domain:** Test  
 **Network:** 192.168.10.0/24
 
 ---
@@ -64,7 +64,7 @@ A virtualized home lab simulating an enterprise Active Directory environment wit
 
 ### 2. Windows Server — Active Directory
 - Installed Windows Server and promoted it to a Domain Controller.
-- Configured Active Directory Domain Services (AD DS) with the domain `MyDFIR`.
+- Configured Active Directory Domain Services (AD DS) with the domain `Test`.
 - Set up DNS and DHCP scopes to serve the internal network.
 - Created organizational units (OUs), user accounts, and applied Group Policy Objects (GPOs).
 
@@ -74,7 +74,7 @@ A virtualized home lab simulating an enterprise Active Directory environment wit
 - Created indexes and dashboards to monitor Windows event logs and Sysmon telemetry.
 
 ### 4. Windows 10 — Target Machine
-- Joined the Windows 10 VM to the `MyDFIR` domain.
+- Joined the Windows 10 VM to the `Test` domain.
 - Installed **Splunk Universal Forwarder** to ship logs to the Splunk server.
 - Installed **Sysmon** with a custom configuration to capture detailed endpoint telemetry.
 - Installed **Atomic Red Team** for adversary simulation.
