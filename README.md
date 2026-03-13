@@ -6,7 +6,7 @@ A virtualized home lab simulating an enterprise Active Directory environment wit
 
 ## 🗺️ Network Diagram
 
-![Active Directory Home Lab Diagram](AD_PROJECT_DIAGRAM.PNG)
+![Active Directory Home Lab Diagram](DIAGRAM.PNG)
 
 ### Network Summary
 
